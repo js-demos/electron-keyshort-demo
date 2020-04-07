@@ -1,5 +1,8 @@
-document.onkeyup = function (event) {
-    const code = event.keyCode;
-    document.getElementById("content").innerText =
-        document.getElementById("content").innerText + "You just pressed key code: " + code + "\n";
-};
+key('a', function () {
+  document.getElementById("content").innerText += "you pressed a\n";
+});
+
+key('⌘+f', function () {
+  document.getElementById("content").innerText += "you pressed cmd+f\n";
+});
+
